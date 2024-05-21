@@ -7,10 +7,15 @@
 // callback de true, no los agrega, cuando el callback da false por primera vez agrega
 // todos los elementos restantes a partir de dicho elemento inclusive)
 
-const numeros = [7, 7, 18, 25]
+const _ = require('lodash');
 
-function numero(x) {
-  return x % 2 === 0;
-}
-const resultado = numeros.findIndex(numero);
-console.table(resultado);
+const numbers = [1, 2, 3, 4, 5, 6];
+const result = _.dropWhile(numbers, function(n) {
+  return n < 4;
+});
+
+console.log(result); // Output: [4, 5, 6]
+
+
+
+
