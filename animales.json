@@ -1,0 +1,14 @@
+[
+  {
+    "tipo" : "Aerro",
+    "raza" : "chiwawa",
+    "color" : "negro",
+    "edad" : 6
+  },
+  {
+    "tipo" : "Animal",
+    "raza" : "pitbull",
+    "color" : "gris",
+    "edad" : 34
+  }
+]
