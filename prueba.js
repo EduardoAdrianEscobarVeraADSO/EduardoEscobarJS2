@@ -1,6 +1,6 @@
 const filtrar = x => x.name === "layout-correct";
 
-(async () => {
+async function eduardo() {
   let response = await fetch('user.json');
   let user = await response.json();
   let respuestGithub = await fetch(`https://api.github.com/users/${user.name}/repos`);
@@ -10,4 +10,5 @@ const filtrar = x => x.name === "layout-correct";
       console.log(element)
     }
   })
-})
+}
+eduardo()

@@ -13,20 +13,20 @@ primeraPromesa
     resultado1 = resultado;
     console.log(`Resultado de la primera promesa: ${resultado1}`);
     return new Promise((resolve) => {
-      setTimeout(() => resolve(resultado1 + 2), 1000);
+      setTimeout(() => resolve(resultado1 + 1), 1000);
     });
   })
   .then((resultado) => {
     resultado2 = resultado;
     console.log(`Resultado de la segunda promesa: ${resultado2}`);
     return new Promise((resolve) => {
-      setTimeout(() => resolve(resultado2 + 2), 1000);
+      setTimeout(() => resolve(resultado2 + 1), 1000);
     });
   })
   .then((resultado) => {
     resultado3 = resultado;
     console.log(`Resultado de la tercera promesa: ${resultado3}`);
-    return resultado3 + 2;
+    return resultado3 + 1;
   })
   .then((resultadoFinal) => {
     const sumaResultados = resultado1 + resultado2 + resultado3;
